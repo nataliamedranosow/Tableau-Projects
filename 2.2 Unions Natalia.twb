@@ -1,0 +1,425 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.1003.1138                               -->
+<workbook original-version='18.1' source-build='2025.1.9 (20251.25.1003.1138)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Q1++ (Transactions)' inline='true' name='federated.0tvrm960bws80619fhpfn0pxvf8w' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Transactions' name='excel-direct.1hti66z0h99guu13xqg4h0ixeuc4'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/natalia.medranosow/OneDrive - Safilo/Documents/Excel en cours/FORMATION TABLEAU/Exercises-TTD201_QA_SP26v1-EN/Data/Transactions.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation type='project'>
+          <columns>
+            <column caption='Category' hidden='true' name='[Q1+].[Category]' />
+            <column caption='Business Unit' hidden='true' name='[Q1+].[Business Unit]' />
+            <column name='[Project].[Category &amp; Business Unit]' project-type='coalesce' />
+          </columns>
+          <bindings>
+            <binding expression='IF NOT ISNULL([Q1+].[Category]) THEN [Q1+].[Category]&#10;ELSEIF NOT ISNULL([Q1+].[Business Unit]) THEN [Q1+].[Business Unit]&#10;ELSE NULL&#10;END' name='[Project].[Category &amp; Business Unit]' />
+          </bindings>
+          <relation type='project'>
+            <columns>
+              <column caption='Sales' hidden='true' name='[Q1+].[Sales]' />
+              <column caption='Saales' hidden='true' name='[Q1+].[Saales]' />
+              <column name='[Project].[Sales &amp; Saales]' project-type='coalesce' />
+            </columns>
+            <bindings>
+              <binding expression='IF NOT ISNULL([Q1+].[Sales]) THEN [Q1+].[Sales]&#10;ELSEIF NOT ISNULL([Q1+].[Saales]) THEN [Q1+].[Saales]&#10;ELSE NULL&#10;END' name='[Project].[Sales &amp; Saales]' />
+            </bindings>
+            <relation all='true' name='Q1+' type='union'>
+              <columns header='yes'>
+                <column datatype='string' name='Category' />
+                <column datatype='string' name='Region' />
+                <column datatype='integer' name='Sales' />
+                <column datatype='string' name='Business Unit' />
+                <column datatype='integer' name='Saales' />
+                <column datatype='string' name='Sheet' />
+                <column datatype='string' name='Table Name' />
+              </columns>
+              <relation connection='excel-direct.1hti66z0h99guu13xqg4h0ixeuc4' name='Q1' table='[Q1$]' type='table'>
+                <columns gridOrigin='A1:C10:no:A1:C10:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Category' ordinal='0' />
+                  <column datatype='string' name='Region' ordinal='1' />
+                  <column datatype='integer' name='Sales' ordinal='2' />
+                </columns>
+              </relation>
+              <relation connection='excel-direct.1hti66z0h99guu13xqg4h0ixeuc4' name='Q2' table='[Q2$]' type='table'>
+                <columns gridOrigin='A1:C14:no:A1:C14:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Business Unit' ordinal='0' />
+                  <column datatype='string' name='Region' ordinal='1' />
+                  <column datatype='integer' name='Sales' ordinal='2' />
+                </columns>
+              </relation>
+              <relation connection='excel-direct.1hti66z0h99guu13xqg4h0ixeuc4' name='Q3' table='[Q3$]' type='table'>
+                <columns gridOrigin='A1:C12:no:A1:C12:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Business Unit' ordinal='0' />
+                  <column datatype='string' name='Region' ordinal='1' />
+                  <column datatype='integer' name='Saales' ordinal='2' />
+                </columns>
+              </relation>
+              <relation connection='excel-direct.1hti66z0h99guu13xqg4h0ixeuc4' name='Q4' table='[Q4$]' type='table'>
+                <columns gridOrigin='A1:C15:no:A1:C15:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Business Unit' ordinal='0' />
+                  <column datatype='string' name='Region' ordinal='1' />
+                  <column datatype='integer' name='Sales' ordinal='2' />
+                </columns>
+              </relation>
+            </relation>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Q1+]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category &amp; Business Unit</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Category &amp; Business Unit]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>Category &amp; Business Unit</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <object-id>[Q1_B331BDBF524C4DB6A9068E146D7C6201]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[Q1+]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <object-id>[Q1_B331BDBF524C4DB6A9068E146D7C6201]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sales &amp; Saales</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sales &amp; Saales]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>Sales &amp; Saales</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Q1_B331BDBF524C4DB6A9068E146D7C6201]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sheet</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sheet]</local-name>
+            <parent-name>[Q1+]</parent-name>
+            <remote-alias>Sheet</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <object-id>[Q1_B331BDBF524C4DB6A9068E146D7C6201]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[Q1+]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <object-id>[Q1_B331BDBF524C4DB6A9068E146D7C6201]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Business Unit' datatype='string' name='[Category &amp; Business Unit]' role='dimension' type='nominal' />
+      <column caption='Sales' datatype='integer' name='[Sales &amp; Saales]' role='measure' type='quantitative' />
+      <column caption='Quarter' datatype='string' name='[Table Name]' role='dimension' type='nominal' />
+      <column caption='Q1' datatype='table' name='[__tableau_internal_object_id__].[Q1_B331BDBF524C4DB6A9068E146D7C6201]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;France&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='Q1' id='Q1_B331BDBF524C4DB6A9068E146D7C6201'>
+            <properties context=''>
+              <relation type='project'>
+                <columns>
+                  <column caption='Category' hidden='true' name='[Q1+].[Category]' />
+                  <column caption='Business Unit' hidden='true' name='[Q1+].[Business Unit]' />
+                  <column name='[Project].[Category &amp; Business Unit]' project-type='coalesce' />
+                </columns>
+                <bindings>
+                  <binding expression='IF NOT ISNULL([Q1+].[Category]) THEN [Q1+].[Category]&#10;ELSEIF NOT ISNULL([Q1+].[Business Unit]) THEN [Q1+].[Business Unit]&#10;ELSE NULL&#10;END' name='[Project].[Category &amp; Business Unit]' />
+                </bindings>
+                <relation type='project'>
+                  <columns>
+                    <column caption='Sales' hidden='true' name='[Q1+].[Sales]' />
+                    <column caption='Saales' hidden='true' name='[Q1+].[Saales]' />
+                    <column name='[Project].[Sales &amp; Saales]' project-type='coalesce' />
+                  </columns>
+                  <bindings>
+                    <binding expression='IF NOT ISNULL([Q1+].[Sales]) THEN [Q1+].[Sales]&#10;ELSEIF NOT ISNULL([Q1+].[Saales]) THEN [Q1+].[Saales]&#10;ELSE NULL&#10;END' name='[Project].[Sales &amp; Saales]' />
+                  </bindings>
+                  <relation all='true' name='Q1+' type='union'>
+                    <columns header='yes'>
+                      <column datatype='string' name='Category' />
+                      <column datatype='string' name='Region' />
+                      <column datatype='integer' name='Sales' />
+                      <column datatype='string' name='Business Unit' />
+                      <column datatype='integer' name='Saales' />
+                      <column datatype='string' name='Sheet' />
+                      <column datatype='string' name='Table Name' />
+                    </columns>
+                    <relation connection='excel-direct.1hti66z0h99guu13xqg4h0ixeuc4' name='Q1' table='[Q1$]' type='table'>
+                      <columns gridOrigin='A1:C10:no:A1:C10:0' header='yes' outcome='6'>
+                        <column datatype='string' name='Category' ordinal='0' />
+                        <column datatype='string' name='Region' ordinal='1' />
+                        <column datatype='integer' name='Sales' ordinal='2' />
+                      </columns>
+                    </relation>
+                    <relation connection='excel-direct.1hti66z0h99guu13xqg4h0ixeuc4' name='Q2' table='[Q2$]' type='table'>
+                      <columns gridOrigin='A1:C14:no:A1:C14:0' header='yes' outcome='6'>
+                        <column datatype='string' name='Business Unit' ordinal='0' />
+                        <column datatype='string' name='Region' ordinal='1' />
+                        <column datatype='integer' name='Sales' ordinal='2' />
+                      </columns>
+                    </relation>
+                    <relation connection='excel-direct.1hti66z0h99guu13xqg4h0ixeuc4' name='Q3' table='[Q3$]' type='table'>
+                      <columns gridOrigin='A1:C12:no:A1:C12:0' header='yes' outcome='6'>
+                        <column datatype='string' name='Business Unit' ordinal='0' />
+                        <column datatype='string' name='Region' ordinal='1' />
+                        <column datatype='integer' name='Saales' ordinal='2' />
+                      </columns>
+                    </relation>
+                    <relation connection='excel-direct.1hti66z0h99guu13xqg4h0ixeuc4' name='Q4' table='[Q4$]' type='table'>
+                      <columns gridOrigin='A1:C15:no:A1:C15:0' header='yes' outcome='6'>
+                        <column datatype='string' name='Business Unit' ordinal='0' />
+                        <column datatype='string' name='Region' ordinal='1' />
+                        <column datatype='integer' name='Sales' ordinal='2' />
+                      </columns>
+                    </relation>
+                  </relation>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='2.2 Unions'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Q1++ (Transactions)' name='federated.0tvrm960bws80619fhpfn0pxvf8w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0tvrm960bws80619fhpfn0pxvf8w'>
+            <column caption='Business Unit' datatype='string' name='[Category &amp; Business Unit]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column caption='Sales' datatype='integer' name='[Sales &amp; Saales]' role='measure' type='quantitative' />
+            <column caption='Quarter' datatype='string' name='[Table Name]' role='dimension' type='nominal' />
+            <column-instance column='[Category &amp; Business Unit]' derivation='None' name='[none:Category &amp; Business Unit:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Table Name]' derivation='None' name='[none:Table Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales &amp; Saales]' derivation='Sum' name='[sum:Sales &amp; Saales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.0tvrm960bws80619fhpfn0pxvf8w].[none:Category &amp; Business Unit:nk] * [federated.0tvrm960bws80619fhpfn0pxvf8w].[sum:Sales &amp; Saales:qk])</rows>
+        <cols>([federated.0tvrm960bws80619fhpfn0pxvf8w].[none:Region:nk] / [federated.0tvrm960bws80619fhpfn0pxvf8w].[none:Table Name:nk])</cols>
+      </table>
+      <simple-id uuid='{8729EFD6-4171-4D3B-B266-F9AF6CEEEE53}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='2.2 Unions'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0tvrm960bws80619fhpfn0pxvf8w].[none:Category &amp; Business Unit:nk]</field>
+            <field>[federated.0tvrm960bws80619fhpfn0pxvf8w].[none:Region:nk]</field>
+            <field>[federated.0tvrm960bws80619fhpfn0pxvf8w].[none:Table Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C410B343-6364-4F6D-9317-D43D998C4840}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='2.2 Unions' width='192'>
+      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
+      uWKZcLCF/w+kZGG3wXNJpwAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
