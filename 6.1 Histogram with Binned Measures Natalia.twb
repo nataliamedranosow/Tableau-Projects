@@ -1,0 +1,569 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.1003.1138                               -->
+<workbook original-version='18.1' source-build='2025.1.9 (20251.25.1003.1138)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Exam Scores (Test_Results)' inline='true' name='federated.0n8h9t81njc13f131uhyn0epjn6o' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Test_Results' name='excel-direct.0hogcyt1vpq5qd1asumwi1d3dij4'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/natalia.medranosow/OneDrive - Safilo/Documents/Excel en cours/FORMATION TABLEAU/Exercises-TTD201_QA_SP26v1-EN/Data/Test_Results.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0hogcyt1vpq5qd1asumwi1d3dij4' name='Exam Scores' table='[&apos;Exam Scores$&apos;]' type='table'>
+          <columns gridOrigin='A1:S10001:no:A1:S10001:0' header='yes' outcome='6'>
+            <column datatype='date' name='Date' ordinal='0' />
+            <column datatype='date' name='DateOfBirth' ordinal='1' />
+            <column datatype='integer' name='Exam' ordinal='2' />
+            <column datatype='integer' name='Exams_Id' ordinal='3' />
+            <column datatype='string' name='Exams_Name' ordinal='4' />
+            <column datatype='string' name='FirstName' ordinal='5' />
+            <column datatype='integer' name='Id' ordinal='6' />
+            <column datatype='string' name='LastName' ordinal='7' />
+            <column datatype='string' name='Name' ordinal='8' />
+            <column datatype='integer' name='School' ordinal='9' />
+            <column datatype='integer' name='Schools_Id' ordinal='10' />
+            <column datatype='integer' name='Scores_Id' ordinal='11' />
+            <column datatype='string' name='State' ordinal='12' />
+            <column datatype='integer' name='Student' ordinal='13' />
+            <column datatype='integer' name='SubjectArea' ordinal='14' />
+            <column datatype='integer' name='SubjectAreas_Id' ordinal='15' />
+            <column datatype='string' name='SubjectAreas_Name' ordinal='16' />
+            <column datatype='integer' name='Number of Records' ordinal='17' />
+            <column datatype='integer' name='Score' ordinal='18' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Exam Scores]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:S10001:no:A1:S10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Exam Scores]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Exam Scores_C646C4B0D0AD43D3A83DB7BFC74C0C65]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DateOfBirth</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[DateOfBirth]</local-name>
+            <parent-name>[Exam Scores]</parent-name>
+            <remote-alias>DateOfBirth</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Exam Scores_C646C4B0D0AD43D3A83DB7BFC74C0C65]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Exam</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Exam]</local-name>
+            <parent-name>[Exam Scores]</parent-name>
+            <remote-alias>Exam</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Exam Scores_C646C4B0D0AD43D3A83DB7BFC74C0C65]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Exams_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Exams_Id]</local-name>
+            <parent-name>[Exam Scores]</parent-name>
+            <remote-alias>Exams_Id</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Exam Scores_C646C4B0D0AD43D3A83DB7BFC74C0C65]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Exams_Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Exams_Name]</local-name>
+            <parent-name>[Exam Scores]</parent-name>
+            <remote-alias>Exams_Name</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Exam Scores_C646C4B0D0AD43D3A83DB7BFC74C0C65]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FirstName</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[FirstName]</local-name>
+            <parent-name>[Exam Scores]</parent-name>
+            <remote-alias>FirstName</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Exam Scores_C646C4B0D0AD43D3A83DB7BFC74C0C65]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Id]</local-name>
+            <parent-name>[Exam Scores]</parent-name>
+            <remote-alias>Id</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Exam Scores_C646C4B0D0AD43D3A83DB7BFC74C0C65]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LastName</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[LastName]</local-name>
+            <parent-name>[Exam Scores]</parent-name>
+            <remote-alias>LastName</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Exam Scores_C646C4B0D0AD43D3A83DB7BFC74C0C65]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Name]</local-name>
+            <parent-name>[Exam Scores]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Exam Scores_C646C4B0D0AD43D3A83DB7BFC74C0C65]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>School</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[School]</local-name>
+            <parent-name>[Exam Scores]</parent-name>
+            <remote-alias>School</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Exam Scores_C646C4B0D0AD43D3A83DB7BFC74C0C65]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Schools_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Schools_Id]</local-name>
+            <parent-name>[Exam Scores]</parent-name>
+            <remote-alias>Schools_Id</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Exam Scores_C646C4B0D0AD43D3A83DB7BFC74C0C65]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Scores_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Scores_Id]</local-name>
+            <parent-name>[Exam Scores]</parent-name>
+            <remote-alias>Scores_Id</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Exam Scores_C646C4B0D0AD43D3A83DB7BFC74C0C65]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Exam Scores]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Exam Scores_C646C4B0D0AD43D3A83DB7BFC74C0C65]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Student</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Student]</local-name>
+            <parent-name>[Exam Scores]</parent-name>
+            <remote-alias>Student</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Exam Scores_C646C4B0D0AD43D3A83DB7BFC74C0C65]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SubjectArea</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SubjectArea]</local-name>
+            <parent-name>[Exam Scores]</parent-name>
+            <remote-alias>SubjectArea</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Exam Scores_C646C4B0D0AD43D3A83DB7BFC74C0C65]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SubjectAreas_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SubjectAreas_Id]</local-name>
+            <parent-name>[Exam Scores]</parent-name>
+            <remote-alias>SubjectAreas_Id</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Exam Scores_C646C4B0D0AD43D3A83DB7BFC74C0C65]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SubjectAreas_Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[SubjectAreas_Name]</local-name>
+            <parent-name>[Exam Scores]</parent-name>
+            <remote-alias>SubjectAreas_Name</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Exam Scores_C646C4B0D0AD43D3A83DB7BFC74C0C65]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Records</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Records]</local-name>
+            <parent-name>[Exam Scores]</parent-name>
+            <remote-alias>Number of Records</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Exam Scores_C646C4B0D0AD43D3A83DB7BFC74C0C65]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Score]</local-name>
+            <parent-name>[Exam Scores]</parent-name>
+            <remote-alias>Score</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Exam Scores_C646C4B0D0AD43D3A83DB7BFC74C0C65]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Date Of Birth' datatype='date' name='[DateOfBirth]' role='dimension' type='ordinal' />
+      <column caption='Exams Id' datatype='integer' name='[Exams_Id]' role='dimension' type='ordinal' />
+      <column caption='Exams Name' datatype='string' name='[Exams_Name]' role='dimension' type='nominal' />
+      <column caption='First Name' datatype='string' name='[FirstName]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Id]' role='dimension' type='ordinal' />
+      <column caption='Last Name' datatype='string' name='[LastName]' role='dimension' type='nominal' />
+      <column caption='Schools Id' datatype='integer' name='[Schools_Id]' role='dimension' type='ordinal' />
+      <column aggregation='None' caption='Score (bin)' datatype='integer' name='[Score (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[Score]' peg='0' size='5' />
+      </column>
+      <column datatype='integer' name='[Score]' role='measure' type='quantitative' />
+      <column caption='Scores Id' datatype='integer' name='[Scores_Id]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Subject Area' datatype='integer' name='[SubjectArea]' role='measure' type='quantitative' />
+      <column caption='SubjectAreas Id' datatype='integer' name='[SubjectAreas_Id]' role='dimension' type='ordinal' />
+      <column caption='SubjectAreas Name' datatype='string' name='[SubjectAreas_Name]' role='dimension' type='nominal' />
+      <column caption='Exam Scores' datatype='table' name='[__tableau_internal_object_id__].[Exam Scores_C646C4B0D0AD43D3A83DB7BFC74C0C65]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;France&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='Exam Scores' id='Exam Scores_C646C4B0D0AD43D3A83DB7BFC74C0C65'>
+            <properties context=''>
+              <relation connection='excel-direct.0hogcyt1vpq5qd1asumwi1d3dij4' name='Exam Scores' table='[&apos;Exam Scores$&apos;]' type='table'>
+                <columns gridOrigin='A1:S10001:no:A1:S10001:0' header='yes' outcome='6'>
+                  <column datatype='date' name='Date' ordinal='0' />
+                  <column datatype='date' name='DateOfBirth' ordinal='1' />
+                  <column datatype='integer' name='Exam' ordinal='2' />
+                  <column datatype='integer' name='Exams_Id' ordinal='3' />
+                  <column datatype='string' name='Exams_Name' ordinal='4' />
+                  <column datatype='string' name='FirstName' ordinal='5' />
+                  <column datatype='integer' name='Id' ordinal='6' />
+                  <column datatype='string' name='LastName' ordinal='7' />
+                  <column datatype='string' name='Name' ordinal='8' />
+                  <column datatype='integer' name='School' ordinal='9' />
+                  <column datatype='integer' name='Schools_Id' ordinal='10' />
+                  <column datatype='integer' name='Scores_Id' ordinal='11' />
+                  <column datatype='string' name='State' ordinal='12' />
+                  <column datatype='integer' name='Student' ordinal='13' />
+                  <column datatype='integer' name='SubjectArea' ordinal='14' />
+                  <column datatype='integer' name='SubjectAreas_Id' ordinal='15' />
+                  <column datatype='string' name='SubjectAreas_Name' ordinal='16' />
+                  <column datatype='integer' name='Number of Records' ordinal='17' />
+                  <column datatype='integer' name='Score' ordinal='18' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Score Distribution'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Exam Scores (Test_Results)' name='federated.0n8h9t81njc13f131uhyn0epjn6o' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0n8h9t81njc13f131uhyn0epjn6o'>
+            <column aggregation='None' caption='Score (bin)' datatype='integer' name='[Score (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[Score]' peg='0' size='5' />
+            </column>
+            <column datatype='integer' name='[Score]' role='measure' type='quantitative' />
+            <column-instance column='[Score]' derivation='Count' name='[cnt:Score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Score (bin)]' derivation='None' name='[none:Score (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.0n8h9t81njc13f131uhyn0epjn6o].[cnt:Score:qk]</rows>
+        <cols>[federated.0n8h9t81njc13f131uhyn0epjn6o].[none:Score (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.0n8h9t81njc13f131uhyn0epjn6o].[Score (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{29E0D8BF-73D9-414F-ACC1-90093D2ACA78}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Score Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0n8h9t81njc13f131uhyn0epjn6o].[none:Score (bin):qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5249879E-F0B0-462A-9F4D-ED18014DF759}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Score Distribution' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
